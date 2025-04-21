@@ -1,0 +1,134 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color:rgb(32, 34, 43)
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+header h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    font-size: 40px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(24, 26, 33);
+    border: 2px solid #fffdfd;
+    color: rgb(231, 231, 231);
+    padding: 20px;
+    width: 350px;
+    border-radius: 15px;
+}
+
+.formulario h2 {
+    font-weight: 100;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.entrada {
+    position: relative;
+    width: 100%;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.entrada input,
+.entrada select {
+    width: 100%;
+    padding: 16px 10px 6px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    background: none;
+    color: white;
+}
+
+.entrada label {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 16px;
+    color: #b8b8b8;
+    background-color:  rgb(24, 26, 33);
+    padding: 0 4px;
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+.entrada input:focus + label,
+.entrada input:valid + label,
+.entrada select:focus + label,
+.entrada select:valid + label {
+    top: -8px;
+    left: 10px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.entrada input:placeholder-shown + label {
+    top: 16px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    align-self: center;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(9, 13, 43);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(37, 46, 124);
+}
+
+.tabla-registros {
+    margin-top: 50px;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+.tabla-registros th,
+.tabla-registros td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+/* Responsable del diseno con CSS: Alonzo Ramos */

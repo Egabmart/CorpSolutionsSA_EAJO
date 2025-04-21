@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CorpSolutions Registro</title>
+    <meta name="authors" content="Edmundo Martinez, Alvaro Rocha, Alonzo Ramos, Oscar Martinez">
+    <meta name="description" content="CorpSolutions, registro">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a CorpSolutions</h1>
+    </header>
+    <main>
+        <div class="formulario">
+            <h2>Porfavor registre sus datos</h2>
+            <form id="formulario-registro" action="/procesar-datos" method="post">
+                <div class="entrada">
+                    <input type="text" id="numerocedula" name="numerocedula" required>
+                    <label for="numerocedula">Numero de cedula</label>
+                </div>
+                <div class="entrada">
+                    <input type="text" id="nombres" name="nombres" required>
+                    <label for="nombres">Nombres</label>
+                </div>
+                <div class="entrada">
+                    <input type="text" id="apellidos" name="apellidos" required>
+                    <label for="apellidos">Apellidos</label>
+                </div>
+                <div class="entrada">
+                    <select id="departamento" name="departamento" required>
+                        <option value="" disabled selected hidden>Seleccionar</option>
+                        <option value="ventas">Ventas</option>
+                        <option value="credito">Credito</option>
+                        <option value="recursos-humanos">Recursos humanos</option>
+                    </select>
+                    <label for="departamento">Departamento</label>
+                </div>
+                <div class="entrada">
+                    <input type="text" id="motivo" name="motivo" required>
+                    <label for="motivo">Motivo de la visita</label>
+                </div>
+                <input type="submit" value="Registrar">
+              </form>              
+        </div>
+        <div id="contenedor-tabla">
+
+        </div>
+    </main>
+    <footer>
+        <h6>CorpSolutions SA</h6>
+    </footer>
+    <script src="registro.js"></script>
+
+</body>
+</html>
+
+<!--Responsable de la Estructura HTML y semantica: Edmundo Martinez-->
