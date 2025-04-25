@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const formulario = document.getElementById('formulario-registro');
     const contenedorTabla = document.getElementById('contenedor-tabla');
-    let tabla; // la creacio tabla
+    let tabla; // la creacion tabla
   
     formulario.addEventListener('submit', function(event) {
       event.preventDefault();
